@@ -77,7 +77,6 @@
                             <PropertyValue Property="Value" Path="CustomerID"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/High"/>
                         </Record>
-                        <!-- Contato com QuickView (popup) vindo da entidade Customer -->
                         <Record Type="UI.DataFieldForAnnotation">
                             <PropertyValue Property="Label" String="{@i18n>contato}"/>
                             <PropertyValue Property="Target" AnnotationPath="Customer/@Communication.Contact"/>
@@ -95,13 +94,11 @@
                             <PropertyValue Property="Value" Path="Freight"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Medium"/>
                         </Record>
-                        <!-- DataPoint com barra de progresso dentro da tabela -->
                         <Record Type="UI.DataFieldForAnnotation">
                             <PropertyValue Property="Label" String="{@i18n>progressoFrete}"/>
                             <PropertyValue Property="Target" AnnotationPath="@UI.DataPoint#ProgressoFrete"/>
                             <Annotation Term="UI.Importance" EnumMember="UI.ImportanceType/Low"/>
                         </Record>
-                        <!-- DataPoint com estrelas (rating) dentro da tabela -->
                         <Record Type="UI.DataFieldForAnnotation">
                             <PropertyValue Property="Label" String="{@i18n>avaliacao}"/>
                             <PropertyValue Property="Target" AnnotationPath="@UI.DataPoint#Avaliacao"/>
