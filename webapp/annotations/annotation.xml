@@ -257,10 +257,12 @@
                                 <Record Type="UI.DataField">
                                     <PropertyValue Property="Value" Path="ShippedDate"/>
                                 </Record>
-                                <!-- Contato também dentro do formulário -->
                                 <Record Type="UI.DataFieldForAnnotation">
                                     <PropertyValue Property="Label" String="{@i18n>contato}"/>
                                     <PropertyValue Property="Target" AnnotationPath="Customer/@Communication.Contact"/>
+                                </Record>
+                                <Record Type="UI.DataField">
+                                    <PropertyValue Property="Value" Path="Customer/CompanyName"/>
                                 </Record>
                             </Collection>
                         </PropertyValue>
@@ -327,6 +329,16 @@
                             <PropertyValue Property="ID" String="Itens"/>
                             <PropertyValue Property="Label" String="{@i18n>itens}"/>
                             <PropertyValue Property="Target" AnnotationPath="Order_Details/@UI.LineItem"/>
+                        </Record>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Label" String="Dados Gerais"/>
+                            <PropertyValue Property="ID" String="DadosGerais2"/>
+                            <PropertyValue Property="Target" AnnotationPath="@UI.FieldGroup#DadosGerais"/>
+                        </Record>
+                        <Record Type="UI.ReferenceFacet">
+                            <PropertyValue Property="Target" AnnotationPath="Order_Details/@UI.LineItem"/>
+                            <PropertyValue Property="Label" String="Item"/>
+                            <PropertyValue Property="ID" String="Item"/>
                         </Record>
                     </Collection>
                 </Annotation>
